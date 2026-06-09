@@ -10,5 +10,7 @@ let () =
   Printf.printf "Gamma: %f\n" (Greeks.gamma 100.0 100.0 1.0 0.05 0.2);
   Printf.printf "Vega: %f\n" (Greeks.vega 100.0 100.0 1.0 0.05 0.2);
   Printf.printf "Theta: %f\n" ((Greeks.theta Call 100.0 100.0 1.0 0.05 0.2)/.365.0);
-  Printf.printf "Rho: %f\n" ((Greeks.rho Call 100.0 100.0 1.0 0.05 0.2)/.100.0)
+  Printf.printf "Rho: %f\n" ((Greeks.rho Call 100.0 100.0 1.0 0.05 0.2)/.100.0);
+  Printf.printf "IV %f\n" (impliedVol Call 100.0 100.0 1.0 0.05 0.1 10.450584)
+
 
