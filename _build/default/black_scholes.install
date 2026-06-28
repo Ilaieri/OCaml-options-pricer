@@ -1,0 +1,5 @@
+lib: [
+  "_build/install/default/lib/black_scholes/META"
+  "_build/install/default/lib/black_scholes/dune-package"
+  "_build/install/default/lib/black_scholes/opam"
+]
